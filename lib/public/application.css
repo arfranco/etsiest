@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light|Cuprum:400,700);
+body {
+  font-family: "Cuprum";
+  background: #F0F2F2;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #939696;
+  overflow: hidden;
+}
+.navigation {
+  width:980px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 980px;
+  margin: 0 auto;
+}
+.logo {
+  font-family: "Times New Roman";
+  font-size: 40px;
+  float: left;
+  margin: 10px;
+  color: #E68800;
+}
+
+.searchbar {
+  padding: 0px;
+  width: 229px;
+  line-height: 19.6px;
+}
+
+.results {
+  margin-left: 70px;
+  color: rgb(85, 85, 85);
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+.searchbutton {
+  background: #05A5AD; 
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+form {
+  margin: 25px;
+  float: left;
+}
+
+nav.secondary {
+  float: right;
+  margin: 10px;
+  padding: 0px;
+}
+
+.side {
+  text-align: left;
+  float: left;
+  background: white;
+  color: #05A5AD;
+  border: 1px solid gray;
+}
+
+.Henry {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(85, 85, 85);
+  margin-right: 80px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.categories {
+  padding: 0 25px;
+  margin-top: 1px;
+}
+
+.categories li {
+  list-style: none;
+  color: #05A5AD;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.side .results {
+  color: #444545;
+}
+
+.side .categories {
+  color: #444545;
+}
+
+.side h3 {
+  text-align: center;
+}
+
+.side ul {
+  list-style: none;
+}
+
+footer {
+  clear: both;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  color: #999;
+  bottom: 0px;
+  width: 100%
+}
+
+.products {
+  float: left;
+  width: 700px;
+  background: #f0f0f0;
+}
+.product {
+  display: inline-block;
+  background: white;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.details .name {
+  float: left;
+  color: #a4b296;
+}
+.details .price {
+  float: right;
+}
+.details .price:before {
+  content: "$";
+  opacity: 0.3;
+}
