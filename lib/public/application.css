@@ -126,10 +126,19 @@ footer {
   margin: 5px;
   border-radius: 5px;
   padding: 5px;
+  width:150px;
+}
+
+.preview {
+  width: 120px;
 }
 .details .name {
   float: left;
   color: #a4b296;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+  width:140px;
 }
 .details .price {
   float: right;

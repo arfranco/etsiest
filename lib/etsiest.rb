@@ -1,20 +1,21 @@
-require 'sinatra'
+require 'sinatra/base'
 require 'pry'
 require 'etsy'
 require "etsiest/version"
 
-Etsy.protocol = "https"
+
 Etsy.api_key = ENV['ETSY_KEY']
-request = Etsy.request_token
-Etsy.verification_url
+
 
 
 module Etsiest
   class App < Sinatra::Base
 
-    get '/' do 
-      if params[:q]
-        response = Etsy::Request.get('/listings/active', :includes => ['Images', 'Shop'], :keywords => params[:q])
+    get '/etsy_search' do 
+      @search = params['q']
+      #@results = []
+      if params['q']
+        response = Etsy::Request.get('/listings/active', :includes => ['Images', 'Shop'], :keywords => "#{@search}")
         @results = JSON.parse(response.body)['results']
       end
       erb :index

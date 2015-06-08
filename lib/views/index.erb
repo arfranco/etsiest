@@ -42,7 +42,13 @@
       </ul>
     </div>
     <div class="products">
-      <div class="product">
+      <% if @results %>
+      <% @results.each do |product| %>
+        <%= erb :item, locals: {product: product} %>
+      <% end %>
+      <% end %>
+    </div>
+      <!-- <div class="product">
         <div class="preview">
           <img src="http://lorempixel.com/150/150?" alt="">
         </div>
@@ -237,7 +243,7 @@
               12.00
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <footer>
